@@ -1,0 +1,7 @@
+{
+  "name": "ethereum-assignment-2-tutorial", "version": "1.0.0", "private": true, "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": { "compile": "node scripts/compile.mjs", "test": "node --test --test-concurrency=1 tests/*.test.mjs", "dev": "vite --host 127.0.0.1", "build": "npm run compile && vite build", "chain": "hardhat --network default node --hostname 127.0.0.1", "deploy:local": "node scripts/deploy-local.mjs", "demo:local": "node scripts/demo-local.mjs" },
+  "dependencies": { "ethers": "6.17.0", "react": "19.3.0", "react-dom": "19.3.0" },
+  "devDependencies": { "hardhat": "3.18.1", "solc": "0.4.22", "vite": "8.3.3" }
+}

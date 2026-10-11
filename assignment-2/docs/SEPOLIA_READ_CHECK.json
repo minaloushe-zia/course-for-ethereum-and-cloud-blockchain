@@ -1,0 +1,14 @@
+{
+  "checkedDate": "2026-10-07",
+  "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+  "resolver": "0x14B31A1C66a9f3D18DFaC2d123FE8cE5847b7F85",
+  "realRequestOrCallbackTested": false,
+  "chainId": 11155111,
+  "oracleAddress": "0xC7C56b6da8a9B59fE994A87ffB8f435770EC71fe",
+  "oracleHasCode": true,
+  "getPrice": "10038600000000000",
+  "randomDS_getSessionPubKeyHash": {
+    "error": "EVM error: InvalidFEOpcode"
+  },
+  "cbAddress": "0x0000000000000000000000000000000000000000"
+}

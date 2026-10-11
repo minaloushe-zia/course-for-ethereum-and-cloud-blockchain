@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import { JsonRpcProvider, ContractFactory, parseEther } from 'ethers';
+import { compile } from './compile.mjs';
+import { setupBridge } from './local-setup.mjs';
+const artifacts = compile();
+const provider = new JsonRpcProvider('http://127.0.0.1:8545', undefined, { cacheTimeout: -1 });
+provider.pollingInterval = 100;
+const { signer, oracle } = await setupBridge(provider, artifacts);
+const casino = await new ContractFactory(artifacts.CasinoLocalHarness.abi, artifacts.CasinoLocalHarness.bytecode, signer).deploy(parseEther('0.0001'), 100, { value: parseEther('0.02') });
+await casino.waitForDeployment();
+const data = { chainId: 31337, casinoAddress: await casino.getAddress(), oracleAddress: await oracle.getAddress(), oracleMode: 'LOCAL_ORACLIZE_TEST_HARNESS', betsPerRound: 100, deploymentTransaction: casino.deploymentTransaction().hash };
+for (const folder of ['deployments', 'frontend/public']) fs.mkdirSync(new URL('../' + folder, import.meta.url), { recursive: true });
+fs.writeFileSync(new URL('../deployments/local.json', import.meta.url), JSON.stringify(data, null, 2));
+fs.writeFileSync(new URL('../frontend/public/deployment.local.json', import.meta.url), JSON.stringify(data, null, 2));
+console.log(JSON.stringify(data, null, 2));
+await provider.destroy();
