@@ -1,0 +1,8 @@
+node_modules/
+artifacts/
+dist/
+.env*
+!.env.example
+frontend/public/deployment.local.json
+deployments/local.json
+*.log
