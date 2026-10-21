@@ -1,0 +1,10 @@
+{
+  "source": "https://etherscan.io/gastracker",
+  "snapshotUTC": "2026-10-19 14:19:10 UTC",
+  "snapshotShanghai": "2026-10-19 22:19:10 UTC+08:00",
+  "standardGasPriceGwei": "0.293",
+  "ethUsd": "2412.34",
+  "simplified640000GasUsd": "0.45236199680000",
+  "local758369GasMainnetEquivalentUsd": "0.53602705492378",
+  "realUsdSpentOnLocalVm": "0"
+}

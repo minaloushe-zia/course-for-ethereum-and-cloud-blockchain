@@ -1,0 +1,11 @@
+{
+  "network": "Sepolia",
+  "chainId": 11155111,
+  "wallet": "0x9790Ee03d83094081aFbDeBa34bBb2C6A4370Cd8",
+  "fundingVerified": false,
+  "contractAddress": null,
+  "deploymentTransactionHash": null,
+  "helloTransactionHash": null,
+  "submissionEvidence": "Successful Remix VM Osaka deployment and calls are recorded separately in remix-hello-results-user.json",
+  "status": "No successful Sepolia funding or deployment was obtained"
+}

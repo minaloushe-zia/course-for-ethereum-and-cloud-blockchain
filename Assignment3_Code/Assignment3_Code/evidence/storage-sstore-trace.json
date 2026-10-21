@@ -1,0 +1,200 @@
+[
+  {
+    "pc": 293,
+    "op": "SSTORE",
+    "gasCost": 20000,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  },
+  {
+    "pc": 331,
+    "op": "SSTORE",
+    "gasCost": 22100,
+    "depth": 1
+  }
+]

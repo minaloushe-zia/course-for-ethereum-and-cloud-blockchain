@@ -1,0 +1,25 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "HelloWorld.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.30;\n\ncontract HelloWorld {\n    event Greeting(address indexed caller, string message);\n\n    function hello() external returns (string memory) {\n        string memory message = \"Hello, world!\";\n        emit Greeting(msg.sender, message);\n        return message;\n    }\n\n    function readHello() external pure returns (string memory) {\n        return \"Hello, world!\";\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "metadata"
+        ]
+      }
+    }
+  }
+}

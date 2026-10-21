@@ -1,0 +1,16 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_b",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "put",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
