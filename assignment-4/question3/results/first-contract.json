@@ -1,0 +1,31 @@
+{
+  "chainId": "1",
+  "provider": "Infura Ethereum mainnet",
+  "blockNumber": 46402,
+  "blockHash": "0x249ea54eada07708b29d7c424b8466dec9f1d98067b0be1b89c7ee660cca858d",
+  "blockTimestampUTC": "2015-08-07T04:42:15.000Z",
+  "transactionHash": "0x6c929e1c3d860ee225d7f3a7addf9e3f740603d243260536dfa2f3cf02b51de4",
+  "transactionIndex": 0,
+  "from": "0xa1e4380a3b1f749673e270229993ee55f35663b4",
+  "to": null,
+  "createdContractAddress": "0x9a049f5d18c239efaa258af9f3e7002949a977a0",
+  "search": {
+    "startBlock": 0,
+    "validatedThrough": 46402,
+    "emptyBlocksSkipped": 46324,
+    "fullBlocksRead": 79,
+    "mode": "fee-history prefilter and ordered full-block scan"
+  },
+  "rpcAttempts": {
+    "eth_chainId": 1,
+    "eth_blockNumber": 1,
+    "eth_feeHistory": 46,
+    "eth_getBlockByNumber": 79,
+    "eth_getTransactionByHash": 1,
+    "eth_getTransactionReceipt": 1
+  },
+  "elapsedSeconds": 43.93,
+  "verifiedAtUTC": "2026-10-31T09:51:38.123Z",
+  "blockExplorer": "https://etherscan.io/block/46402",
+  "transactionExplorer": "https://etherscan.io/tx/0x6c929e1c3d860ee225d7f3a7addf9e3f740603d243260536dfa2f3cf02b51de4"
+}

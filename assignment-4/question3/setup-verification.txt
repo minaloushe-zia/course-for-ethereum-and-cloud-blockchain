@@ -1,0 +1,8 @@
+
+> assignment4-ethereum-analysis@1.0.0 check
+> node check-installation.mjs
+
+Node.js: v25.7.0
+Web3.js: 4.16.0
+Web3.js import and initialization: OK
+Question 3(c) project setup: complete

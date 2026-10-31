@@ -1,0 +1,18 @@
+{
+  "name": "assignment4-ethereum-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Assignment 4 Question 3 blockchain data analysis with Node.js and Web3.js",
+  "type": "module",
+  "scripts": {
+    "check": "node check-installation.mjs",
+    "test": "node --test test/*.test.mjs",
+    "find": "node --env-file=.env find-first-contract.mjs"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "dependencies": {
+    "web3": "4.16.0"
+  }
+}
