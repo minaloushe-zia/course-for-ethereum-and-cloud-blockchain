@@ -1,0 +1,14 @@
+{
+  "verifiedAtUTC": "2026-10-31T10:24:16.933Z",
+  "networkId": 5777,
+  "chainId": 1337,
+  "contract": "0x3798fe8d9dbFA92F2E50B09A0e5Cb59a01FCa2B1",
+  "creator": "0x1383251D1cd1551Eb7DeA9B46dEf6f31C81FC0a9",
+  "deploymentTransaction": "0x77243f62da3c0f01f88166446da1793429597b6041d648aa7ba96825600f39d4",
+  "deploymentBlock": 3,
+  "name": "XYZCoin",
+  "symbol": "XYZ",
+  "decimals": "0",
+  "totalSupply": "1000",
+  "creatorBalance": "1000"
+}

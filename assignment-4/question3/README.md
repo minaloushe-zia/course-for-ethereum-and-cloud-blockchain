@@ -4,7 +4,7 @@ This Node.js project uses Web3.js and an Infura Ethereum mainnet provider to fin
 
 ## Question 3b Infura
 
-The account uses the My First Key credential with Ethereum Mainnet enabled. The endpoint format is https://mainnet.infura.io/v3/YOUR_API_KEY. The real key belongs in the local .env file.
+The account uses Ethereum Mainnet. The endpoint format is https://mainnet.infura.io/v3/YOUR_API_KEY.
 
 ## Question 3c Project setup
 
@@ -26,7 +26,7 @@ The check imports Web3.js, creates an instance and verifies that its address uti
 
 ## Infura configuration
 
-Copy .env.example to .env and replace the placeholder with your Infura API key. The .env file is excluded from Git. Ethereum mainnet requests use the endpoint https://mainnet.infura.io/v3/ followed by that key.
+Copy .env.example to .env and replace the placeholder with your Infura API key.
 
 On Windows, create the local configuration with:
 
@@ -51,7 +51,7 @@ Transaction hash:
 
 The recipient is null. The receipt identifies the created address as 0x9a049f5d18c239efaa258af9f3e7002949a977a0. The task's criterion is a contract-creation transaction, irrespective of whether its deployed runtime code is useful or nonempty.
 
-The program writes the result to results/first-contract.json and the inspected prefix to results/scan-evidence.json. These outputs contain no API key. Inspect the [transaction on Etherscan](https://etherscan.io/tx/0x6c929e1c3d860ee225d7f3a7addf9e3f740603d243260536dfa2f3cf02b51de4).
+The program writes the result to results/first-contract.json and the inspected prefix to results/scan-evidence.json. Inspect the [transaction on Etherscan](https://etherscan.io/tx/0x6c929e1c3d860ee225d7f3a7addf9e3f740603d243260536dfa2f3cf02b51de4).
 
 ### How the search establishes the earliest result
 

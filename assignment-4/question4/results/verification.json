@@ -1,0 +1,15 @@
+{
+  "verifiedAtUTC": "2026-10-31T10:24:43.715Z",
+  "node": "v25.7.0",
+  "truffle": "5.11.5",
+  "ganache": "7.9.1",
+  "truffleAssertions": "0.9.2",
+  "compiler": "0.5.1+commit.c8a2cb62.Emscripten.clang",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "networkId": 5777,
+  "testsPassed": 16,
+  "testsFailed": 0
+}

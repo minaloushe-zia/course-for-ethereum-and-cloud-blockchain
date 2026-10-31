@@ -1,0 +1,17 @@
+{
+  "name": "assignment4-xyzcoin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Assignment 4 Question 4 ERC20 implementation and Truffle tests",
+  "scripts": {
+    "compile": "truffle compile --all",
+    "develop": "truffle develop",
+    "test": "truffle test",
+    "migrate": "truffle migrate --network development"
+  },
+  "devDependencies": {
+    "solc": "0.5.1",
+    "truffle": "5.11.5",
+    "truffle-assertions": "0.9.2"
+  }
+}
